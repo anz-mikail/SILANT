@@ -1,0 +1,15 @@
+.Footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 20px;
+    font-family: Bold, Helvetica, sans-serif;
+}
+@media screen and (max-width: 768px) {
+    .Footer {
+        padding: 10px;
+    }
+}

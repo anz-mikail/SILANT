@@ -1,0 +1,33 @@
+@font-face {
+    src: url("../image/fonts/PT-Astra-Sans_Bold-Italic.ttf");
+    font-family: "Bold-italic";
+}
+@font-face {
+    src: url("../image/fonts/PT-Astra-Sans_Bold.ttf");
+    font-family: "Bold";
+}
+@font-face {
+    src: url("../image/fonts/PT-Astra-Sans_Italic.ttf");
+    font-family: "Italic";
+}
+@font-face {
+    src: url("../image/fonts/PT-Astra-Sans_Regular.ttf");
+    font-family: "Regular";
+}
+
+:root {
+    --blue: #163E6C;
+    --red: #D20A11;
+    --white: #EBE6D6;
+}
+.Body {
+    width: 100%;
+    margin-top: 150px;
+    min-height: 350px;
+}
+@media screen and (max-width: 768px) {
+    .Body {
+        margin-top: 200px;
+        min-height: 350px;
+    }
+}

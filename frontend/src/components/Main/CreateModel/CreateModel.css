@@ -1,0 +1,79 @@
+.createDirectory-container, .createDirectory-BlockAdd,
+.createDirectory-BlockChange{
+    display: flex;
+    flex-direction: row;
+}
+
+.createDirectory-BlockAdd, .createDirectory-BlockChange {
+    display: grid;
+    grid-template-columns: 11fr 1fr;
+    width: 470px;
+    height: 130px;
+    transition: translate;
+    transition-property: transform;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+    border-radius: 0 10px 10px 0;
+}
+.createDirectory-BlockAdd {
+    z-index: 20;
+    transform: translateX(-410px);
+    background-color: #da7171;
+}
+.createDirectory-BlockAdd.active {
+    transform: translateX(910px);
+
+}
+
+.createDirectory-BlockChange{
+    z-index: 40;
+    transform: translateX(-500px);
+    background-color: #72a2df;
+}
+.createDirectory-BlockChange.active{
+    transform: translateX(440px);
+}
+
+
+.createDirectory-btnBlock, .createDirectory-btnBlock1, .createDirectory-textBlock{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.createDirectory-btnBlock, .createDirectory-btnBlock1 {
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+.createDirectory-btnBlock2, .createDirectory-textBlock2{
+    display: flex;
+    flex-direction: column;
+
+}
+.createDirectory-textBlock2 {
+    justify-content: start;
+    align-items: start;
+    margin-left: 7rem;
+}
+
+.createDirectory-btnBlock1 {
+    transform: translateX(400px);
+}
+.createDirectory-textBlock {
+    justify-content: center;
+    align-items: center;
+    margin-left: 7rem;
+}
+.createDirectory-textBlock input, textarea{
+    font-family: Bold, Helvetica, sans-serif;
+    font-size: 18px;
+    border-radius: 5px;
+    width: 93%;
+    margin-right: 20px;
+    /*margin-bottom: 10px;*/
+}
+.createDirectory-error {
+    position: absolute;
+    transform: translateY(55px);
+    color: var(--red);
+    font-size: 14px;
+}

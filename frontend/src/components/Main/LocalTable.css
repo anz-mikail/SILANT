@@ -1,0 +1,152 @@
+.btn-block {
+    position: relative;
+    width: 100%;
+    height: 80px;
+}
+.change-btn, .save-btn, .create-btn, .delete-btn {
+    font-family: Bold, Helvetica, sans-serif;
+    font-size: 18px;
+    border-radius: 8px;
+    color: white;
+    width: 220px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+}
+
+.change-btn, .create-btn {
+    background-color: darkgreen;
+    left: 280px;
+}
+.change-btn:hover{
+    background-color: #3fa13f;
+}
+.create-btn:hover {
+    background-color: #04aa6a;
+}
+.change-btn:focus {
+    background-color: darkgreen;
+}
+.change-btn:focus:hover{
+    background-color: #3fa13f;
+}
+.save-btn {
+    top:20px;
+    background-color: var(--blue);
+    left: 280px;
+}
+.save-btn:hover {
+    background-color: #6161d5;
+}
+.save-btn:focus {
+    background-color: var(--blue);
+}
+.delete-btn {
+    background-color: var(--red);
+    left: 5px;
+}
+.delete-btn:hover {
+    background-color: #ed5757;
+}
+.delete-btn:focus {
+    background-color: var(--red);
+}
+
+.create-table {
+    font-family: Bold, Helvetica, sans-serif;
+    font-size: 18px;
+    width: 100%;
+    display: flex;
+    flex-direction: row
+}
+.create-table tr {
+    display: flex;
+    flex-direction: column;
+}
+.create-table thead {
+    z-index: 50;
+}
+.create-table thead th {
+    color: var(--blue);
+    font-weight: bold;
+    text-align: left;
+    padding: 10px 15px;
+    width: 200px;
+    background: #d8d8d8;
+    font-size: 18px;
+}
+.create-table tbody {
+    text-align: center;
+}
+
+.create-table tbody td {
+    text-align: left;
+    padding: 10px;
+    font-size: 18px;
+    width: 100%
+}
+.create-table tbody td:nth-child(even){
+    background: #f3f3f3;
+}
+.add-icon {
+    position: absolute;
+    transform: translateY(-30px);
+    left: -1020px;
+}
+.idStr {
+    height: 67px;
+    margin: 0;
+    padding: 0;
+}
+.model {
+    position: relative;
+    height: 20px;
+}
+.description {
+    height: 40px;
+}
+.create-input{
+    position: relative;
+    font-family: Bold, Helvetica, sans-serif;
+    font-size: 18px;
+    border-radius: 5px;
+    width: 100%;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+}
+.create-error {
+    position: absolute;
+    transform: translate(0, -18px);
+    color: var(--red);
+    font-size: 16px;
+}
+.access-text {
+    font-family: Bold, Helvetica, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    vertical-align: center;
+}
+@media screen and (max-width: 668px) {
+    .create-input {
+        font-size: 16px;
+        width: 85%;
+    }
+    .change-btn, .save-btn, .create-btn, .delete-btn {
+        font-size: 16px;
+        width: 220px;
+    }
+    .create-btn, .save-btn, .change-btn{
+
+        left: 240px;
+    }
+    .add-icon {
+        left: -1080px;
+    }
+}
+@media screen and (max-width: 568px) {
+    .add-icon {
+        left: -1100px;
+    }
+}
