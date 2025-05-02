@@ -1,2 +1,16 @@
 1. Чтобы добавить новаго пользователя нужно зайти в админку http://127.0.0.1:8000/admin/  и добавить нового Usera в модели SILANT / Urers там же нужно задать ему пароль, определить статус и выбрать компанию или клиента!
-2. http://localhost:8000/swagger-ui/ Для того чтобы посмотреть спецификацию API 
+2. http://localhost:8000/swagger-ui/ Для того чтобы посмотреть спецификацию API
+3. Админка {
+      login: admin
+      password: admin   
+ } 
+4. Project {
+    user-1: {
+              login: manager
+              password: manager }
+   user-2: {
+              login: service
+              password: qq }
+   user-3: {
+              login: client
+              password: qq }
